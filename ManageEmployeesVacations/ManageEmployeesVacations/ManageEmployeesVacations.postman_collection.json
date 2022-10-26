@@ -1,0 +1,658 @@
+{
+	"info": {
+		"_postman_id": "fbf20a5d-db23-41cb-8192-f828ab0d3e46",
+		"name": "ManageEmployeesVacations",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23855479"
+	},
+	"item": [
+		{
+			"name": "emp vacations",
+			"item": [
+				{
+					"name": "GetEmpVacations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7018/api/EmployeeVacations",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7018",
+							"path": [
+								"api",
+								"EmployeeVacations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUTEmpVacations",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"employeeId\": 11,\r\n  \"vacationID\": 2,\r\n  \"email\": \"israahossam@gmail.com\",\r\n  \"fullName\": \"israa hossam\",\r\n  \"genderId\": 1,\r\n  \"birthDate\": \"2022-10-16T13:06:42.686Z\",\r\n  \"employeeBalance\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7018/api/EmployeeVacations/11",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7018",
+							"path": [
+								"api",
+								"EmployeeVacations",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POSTEmpVacations",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"employeeID\": 10,\r\n  \"vacationID\": 11,\r\n  \"employeeBalance\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7018/api/EmployeeVacations",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7018",
+							"path": [
+								"api",
+								"EmployeeVacations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Emp Vacation",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7018/api/EmployeeVacations/11",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7018",
+							"path": [
+								"api",
+								"EmployeeVacations",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "vacationreq",
+			"item": [
+				{
+					"name": "GET Vacation Requests",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7018/api/VacationRequests",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7018",
+							"path": [
+								"api",
+								"VacationRequests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Vacation Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"employeeID\": 20,\r\n  \"vacationID\": 2,\r\n  \"vacationDuration\": 1,\r\n  \"startVacationDate\": \"2022-10-16T10:30:31.715Z\",\r\n  \"endVacationDate\": \"2022-10-16T10:30:31.715Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7018/api/VacationRequests",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7018",
+							"path": [
+								"api",
+								"VacationRequests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Vacation Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7018/api/VacationRequests/22",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7018",
+							"path": [
+								"api",
+								"VacationRequests",
+								"22"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Vacation Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"vacationRequestId\": 22,\r\n  \"employeeID\": 20,\r\n  \"vacationID\": 2,\r\n  \"vacationDuration\": 2,\r\n  \"startVacationDate\": \"2022-10-16T10:34:43.493Z\",\r\n  \"endVacationDate\": \"2022-10-16T10:34:43.493Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7018/api/VacationRequests/22",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7018",
+							"path": [
+								"api",
+								"VacationRequests",
+								"22"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employees",
+			"item": [
+				{
+					"name": "GET Employees",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authority",
+								"value": "localhost:7018"
+							},
+							{
+								"key": "accept",
+								"value": "text/plain"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "referer",
+								"value": "https://localhost:7018/swagger/index.html"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"106\", \"Google Chrome\";v=\"106\", \"Not;A=Brand\";v=\"99\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:7018/api/Employees",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7018",
+							"path": [
+								"api",
+								"Employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Employees",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \r\n  \"email\": \"alihassan@gmail.com\",\r\n  \"fullName\": \"ali hassan\",\r\n  \"genderId\": 2,\r\n  \"birthDate\": \"2022-10-16T08:30:24.228Z\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7018/api/Employees",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7018",
+							"path": [
+								"api",
+								"Employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Employee",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7018/api/Employees/23",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7018",
+							"path": [
+								"api",
+								"Employees",
+								"23"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "check balance for Emp",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7018/api/Employees/22/checkBalance",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7018",
+							"path": [
+								"api",
+								"Employees",
+								"22",
+								"checkBalance"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Employee",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"employeeId\": 4,\r\n  \"email\": \"heloo@gmail.com\",\r\n  \"fullName\": \"hello\",\r\n  \"genderId\": 2,\r\n  \"birthDate\": \"2022-10-16T10:18:14.306Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7018/api/Employees/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7018",
+							"path": [
+								"api",
+								"Employees",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "check vacations employees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7018/api/Employees/21/checkVacationsEmployee",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7018",
+							"path": [
+								"api",
+								"Employees",
+								"21",
+								"checkVacationsEmployee"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vacations",
+			"item": [
+				{
+					"name": "Get Vacations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7018/api/Vacations",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7018",
+							"path": [
+								"api",
+								"Vacations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Vacations",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \r\n  \"vacationName\": \"test vaca\",\r\n  \"balance\": 20\r\n  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7018/api/Vacations",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7018",
+							"path": [
+								"api",
+								"Vacations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Vacation",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7018/api/Vacations/13",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7018",
+							"path": [
+								"api",
+								"Vacations",
+								"13"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Vacation",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"vacationId\": 11,\r\n  \"vacationName\": \"updated\",\r\n  \"balance\": 2\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7018/api/Vacations/11",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7018",
+							"path": [
+								"api",
+								"Vacations",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Vacation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7018/api/Vacations/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7018",
+							"path": [
+								"api",
+								"Vacations",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetVacationEmployees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7018/api/Vacations/11/CheckVacationEmployees",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7018",
+							"path": [
+								"api",
+								"Vacations",
+								"11",
+								"CheckVacationEmployees"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Gender",
+			"item": [
+				{
+					"name": "Get Genders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7018/api/Genders",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7018",
+							"path": [
+								"api",
+								"Genders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Gender",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7018/api/Genders/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7018",
+							"path": [
+								"api",
+								"Genders",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Gender",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \r\n  \"genderType\": \"hey\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7018/api/Genders",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7018",
+							"path": [
+								"api",
+								"Genders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Gender",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7018/api/Genders/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7018",
+							"path": [
+								"api",
+								"Genders",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
